@@ -1,0 +1,14 @@
+table, td, th {
+  border: 1px solid black;
+  border-color:green;
+  
+}
+
+table {
+  width: 10%;
+  border-collapse:circle;
+}
+th{
+	background:green;
+	color:white;
+}

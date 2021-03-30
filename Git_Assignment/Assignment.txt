@@ -1,0 +1,194 @@
+			Questions and Commands for the Assignment
+
+1. Create a directory ‘project_dir’ & cd to ‘project_dir’.
+mkdir project_dir	// this command will create directory
+cd project_dir		// this command will help to work under the directory
+
+2. Initialize git version database.
+git init
+
+3. Create a new file index.html.
+touch index.html	//creation of a file
+
+4. Check the git status. You should find index.html as untracked file.
+git status	  // this command will show the untracked files
+
+5. Stage the index.html file.
+git add index.html	// this command will add the file in stagering area
+
+6. Commit index.html
+git commit -m "commiting the file index.html"	
+
+7. Make few changes in index.html & create a new file info.txt file.
+ need to make few changes in the file
+touch info.txt	//creation of new file 
+
+8. Check git status. You should find index.html & info.txt as untracked files.
+git status // we can find untracked file because in index.html file i had made few changes and i have created new file 
+
+9. Configure GIT to ignore all txt files.
+git add .txt	// this commmand will help to add all the ".txt" in stagging area
+
+10. Again check the git status. You should find only index.html as untracked file.
+git status	// after using this command we can see that all the ".txt" files have been gone to staging area but we can find index.html file as an untacked file
+
+11. State & commit index.html
+git add index.html
+git commit -m "commiting the file"
+
+12. Log all your comments so far.
+git log		// this command will help to find all the commits we have made so far
+
+13. Make some changes in index.html.
+i have change some context in a file
+
+14. Revert the change made in the previous step using git command.
+git revert HEAD
+
+15. Again change index.html.
+i have made some changes in the file
+
+16. Stage index.html
+git add index.html
+
+17. Revert back the last stage.
+git revert HEAD
+
+
+18. Rename ‘add’ command to ‘my_add’
+alias add='my_add'	// this command will help to change the command name into my_add
+
+19. Using my_add command Stage index.html again & commit the changes.
+git my_add index.html
+git commit -m " commiting the file"
+
+20. Revert the last commit.
+git revert HEAD
+
+
+
+
+
+			Git Branching in HTML Assignments
+
+1. Create an empty directory ‘Assignments’ & cd to ‘Assignments’.
+mkdir Assignments
+cd Assignments		//creating new directory and projected under the directory
+
+2. Create a file README.txt inside ‘Assignments’ & write few lines about the contents of
+‘Assignments’ folder.
+echo "hello" >> README.txt
+
+3. Commit README.txt file
+git add README.txt
+git commit -m :commiting the file"	// here i am adding the file in staging area and then commit the file
+
+4. Now create a new branch ‘html-assignments’.
+git branch html-assignments	// here i am creating new branch in Assignment directory
+
+5. Switch to ‘html-assignments’ branch.
+git checkout html-assignments	// command willl help to switch to another branch
+
+6. Copy all HTML assignments inside ‘Assignments’ folder.
+git clone C:/Users/sparshvarshney/Assignments
+
+7. Commit HTML assignments into ‘html-assignments’ branch.
+git add .
+git commit -m "commiting the files"
+
+8. Make minor changes into few files belonging to ‘html-assignments’ branch.
+Making few changes in some files that belongs to html-assignments
+
+9. Commit those changed files.
+git add .
+git commit -m "committing the files"
+
+10. Switch to master branch.
+git checkout master
+
+11. Make minor changes into README.txt file & commit those changes into master.
+making some changes in README.txt file then commiting the file
+git add README.txt
+git commit -m "commiting the files"
+
+12. Again switch to ‘html-assignments’ branch.
+git checkout html-assignments
+
+13. Make minor changes into few files belonging to ‘html-assignments’ branch.
+making some changes in some files of html-assignments
+
+14. Commit those changes.
+git add .
+git commit -m "commiting the files"
+
+15. Switch to master.
+git checkout master
+
+16. . Merge ‘html-assignments’ branch into master. Confirm all html assignments are shown
+in master.
+git merge html-assignments
+git log
+git status
+
+17. Finally delete the ‘html-assignments’ branch.
+git -d html-assignments
+
+
+
+			CSS Assignments
+
+1. Create a new branch ‘css-assignments’.
+git branch css-assignments
+
+2. Switch to ‘css-assignments’ branch.
+git checkout css-assignments
+
+3. Copy all CSS assignments inside ‘Assignments’ folder.
+git clone C:/Users/sparshvarshney/Assignments
+
+4. Commit CSS assignments into ‘css-assignments’ branch.
+git add .
+git commit -m "commiting the files"
+
+5. Make minor changes into README.txt file on line 1 belonging to ‘css-assignments’
+branch.
+making few changes in the first line of README.txt
+
+6. Commit those changed files.
+git add . 
+git commit -m "commiting the files"
+
+7. Switch to master branch.
+git checkout master
+
+8. Make minor changes into README.txt file on line 3 & commit those changes into
+master.
+making some changes in line 3 of README.txt file and commiting the changes by command
+git add .
+git commit -m "commiting the files"
+
+9. Again switch to ‘css-assignments’ branch.
+git checkout css-assignments
+
+10. Make minor changes into few files belonging to ‘css-assignments’ branch.
+making some changes in few files
+
+11. Commit those changes.
+git add .
+git commit -m "commiting the files"
+
+12. Switch to master.
+git checkout master
+
+13. Merge ‘css-assignments’ branch into master. Confirm all css assignments are shown in
+master.
+git merge css-assignments
+
+14. Finally delete the ‘css-assignments’ branch.
+git -d css-assignments
+
+
+
+
+
+
